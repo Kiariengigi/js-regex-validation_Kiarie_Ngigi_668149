@@ -10,20 +10,20 @@
     }
 </style>
 <body>
-    <form id="regform">
+    <form id="regform" novalidate>
         <label for="fname">Write your full name: </label>
         <input type="text" id="fname" pattern="[A-Za-z ]" title="Only alphabetic characters, spaces allowed"><br><br>
-        <span id="fnameerror" class="error"></span>
+        <span id="fnameerror" class="error"></span><br><br>
         <label for="email">Enter your email address: </label>
         <input type="email" id="email" title="Valid email format"><br><br>
-        <span id="emailerror" class="error"></span>
+        <span id="emailerror" class="error"></span><br><br>
         <label for="phone">Enter your phone number: </label>
         <input type="text" id="phone" pattern="\d+{10,15}" title="Only digits, 10-15 characters"><br><br>
-        <span id="numbererror" class="error"></span>
+        <span id="numbererror" class="error"></span><br><br>
         <label for="password">Enter a strong password</label>
         <input type="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$" title="At least 8 characters, including one uppercase letter, one 
         lowercase letter, and one number"> <br><br>
-        <span id="passworderror" class="error"></span>
+        <span id="passworderror" class="error"></span><br><br>
         <input type="submit" id="submitbtn">
         <div id="sucessmessage"></div>
     </form>
